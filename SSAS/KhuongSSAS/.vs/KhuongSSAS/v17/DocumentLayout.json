@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Khuong SSIS.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|solutionrelative:KhuongSSAS\\Khuong SSIS.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Dim Product.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|solutionrelative:KhuongSSAS\\Dim Product.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Dim Location.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|solutionrelative:KhuongSSAS\\Dim Location.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|solutionrelative:KhuongSSAS\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{76F90216-8B96-1AA6-EBD1-B9DFE2DEE3F5}|KhuongSSAS\\KhuongSSAS.dwproj|solutionrelative:KhuongSSAS\\Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dim Product.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Dim Product.dim",
+              "RelativeDocumentMoniker": "KhuongSSAS\\Dim Product.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\LAB\\KhuongSSAS\\KhuongSSAS\\Dim Product.dim [Design]",
+              "RelativeToolTip": "..\\..\\..\\LAB\\KhuongSSAS\\KhuongSSAS\\Dim Product.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-18T07:07:14.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Location.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Dim Location.dim",
+              "RelativeDocumentMoniker": "KhuongSSAS\\Dim Location.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\LAB\\KhuongSSAS\\KhuongSSAS\\Dim Location.dim [Design]",
+              "RelativeToolTip": "..\\..\\..\\LAB\\KhuongSSAS\\KhuongSSAS\\Dim Location.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-18T07:07:06.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Date.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Dim Date.dim",
+              "RelativeDocumentMoniker": "KhuongSSAS\\Dim Date.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\LAB\\KhuongSSAS\\KhuongSSAS\\Dim Date.dim [Design]",
+              "RelativeToolTip": "..\\..\\..\\LAB\\KhuongSSAS\\KhuongSSAS\\Dim Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-18T07:06:59.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Khuong SSIS.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Khuong SSIS.cube",
+              "RelativeDocumentMoniker": "KhuongSSAS\\Khuong SSIS.cube",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Khuong SSIS.cube [Design]",
+              "RelativeToolTip": "KhuongSSAS\\Khuong SSIS.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-18T07:06:42.584Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dim Customer.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\KhuongSSAS\\Dim Customer.dim",
+              "RelativeDocumentMoniker": "KhuongSSAS\\Dim Customer.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\LAB\\KhuongSSAS\\KhuongSSAS\\Dim Customer.dim [Design]",
+              "RelativeToolTip": "..\\..\\..\\LAB\\KhuongSSAS\\KhuongSSAS\\Dim Customer.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-18T07:06:45.976Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

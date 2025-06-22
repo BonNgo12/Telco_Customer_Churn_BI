@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Customer Churn DB.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|solutionrelative:CustomerChurnPrediction_SSAS\\Customer Churn DB.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Customer Churn DB.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|solutionrelative:CustomerChurnPrediction_SSAS\\Customer Churn DB.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Internet Service.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|solutionrelative:CustomerChurnPrediction_SSAS\\Dim Internet Service.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Tenure.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|solutionrelative:CustomerChurnPrediction_SSAS\\Dim Tenure.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Churn.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|solutionrelative:CustomerChurnPrediction_SSAS\\Dim Churn.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Payment Method.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|solutionrelative:CustomerChurnPrediction_SSAS\\Dim Payment Method.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Additional Services.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|solutionrelative:CustomerChurnPrediction_SSAS\\Dim Additional Services.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|solutionrelative:CustomerChurnPrediction_SSAS\\Dim Customer.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Contract.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{83752B29-E13C-CA32-A26A-D877296AE427}|CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS.dwproj|solutionrelative:CustomerChurnPrediction_SSAS\\Dim Contract.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 152,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer Churn DB.dsv [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Customer Churn DB.dsv",
+              "RelativeDocumentMoniker": "CustomerChurnPrediction_SSAS\\Customer Churn DB.dsv",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Customer Churn DB.dsv [Design]",
+              "RelativeToolTip": "CustomerChurnPrediction_SSAS\\Customer Churn DB.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-03T02:47:18.29Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Tenure.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Tenure.dim",
+              "RelativeDocumentMoniker": "CustomerChurnPrediction_SSAS\\Dim Tenure.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Tenure.dim [Design]",
+              "RelativeToolTip": "CustomerChurnPrediction_SSAS\\Dim Tenure.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T09:03:49.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dim Churn.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Churn.dim",
+              "RelativeDocumentMoniker": "CustomerChurnPrediction_SSAS\\Dim Churn.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Churn.dim [Design]",
+              "RelativeToolTip": "CustomerChurnPrediction_SSAS\\Dim Churn.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T09:03:45.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dim Payment Method.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Payment Method.dim",
+              "RelativeDocumentMoniker": "CustomerChurnPrediction_SSAS\\Dim Payment Method.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Payment Method.dim [Design]",
+              "RelativeToolTip": "CustomerChurnPrediction_SSAS\\Dim Payment Method.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T09:03:42.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dim Additional Services.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Additional Services.dim",
+              "RelativeDocumentMoniker": "CustomerChurnPrediction_SSAS\\Dim Additional Services.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Additional Services.dim [Design]",
+              "RelativeToolTip": "CustomerChurnPrediction_SSAS\\Dim Additional Services.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T09:03:37.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dim Customer.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Customer.dim",
+              "RelativeDocumentMoniker": "CustomerChurnPrediction_SSAS\\Dim Customer.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Customer.dim [Design]",
+              "RelativeToolTip": "CustomerChurnPrediction_SSAS\\Dim Customer.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T09:03:32.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dim Contract.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Contract.dim",
+              "RelativeDocumentMoniker": "CustomerChurnPrediction_SSAS\\Dim Contract.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Contract.dim [Design]",
+              "RelativeToolTip": "CustomerChurnPrediction_SSAS\\Dim Contract.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T09:03:28.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Internet Service.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Internet Service.dim",
+              "RelativeDocumentMoniker": "CustomerChurnPrediction_SSAS\\Dim Internet Service.dim",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Dim Internet Service.dim [Design]",
+              "RelativeToolTip": "CustomerChurnPrediction_SSAS\\Dim Internet Service.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T09:03:16.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Customer Churn DB.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Customer Churn DB.cube",
+              "RelativeDocumentMoniker": "CustomerChurnPrediction_SSAS\\Customer Churn DB.cube",
+              "ToolTip": "C:\\Users\\khuon\\Desktop\\Decision Support \u0026 BI App\\LAB\\Lab assignments\\KHUONG_LAB\\KhuongSSAS\\CustomerChurnPrediction_SSAS\\CustomerChurnPrediction_SSAS\\Customer Churn DB.cube [Design]",
+              "RelativeToolTip": "CustomerChurnPrediction_SSAS\\Customer Churn DB.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-02T09:03:14.501Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 34,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

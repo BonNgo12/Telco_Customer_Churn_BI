@@ -1,0 +1,227 @@
+﻿-- 1. Sử dụng NON EMPTY Keyword
+SELECT
+    NON EMPTY {[Measures].[Customer Churn Fact Count]} ON COLUMNS,
+    NON EMPTY [Dim Internet Service].[Internet Service].MEMBERS*
+              [Dim Contract].[Contract Group].MEMBERS ON ROWS
+FROM [Customer Churn DB];
+
+-- 2. Sử dụng HAVING Clause
+SELECT
+    {[Measures].[Customer Churn Fact Count]} ON COLUMNS,
+    [Dim Payment Method].[Payment Category].MEMBERS
+        HAVING [Measures].[Customer Churn Fact Count] > 1000 ON ROWS
+FROM [Customer Churn DB];
+
+-- 3. Sử dụng FILTER Function
+SELECT
+    {[Measures].[Customer Churn Fact Count]} ON COLUMNS,
+    FILTER(
+        [Dim Tenure].[Tenure Range].MEMBERS,
+        [Measures].[Customer Churn Fact Count] > 500
+    ) * [Dim Internet Service].[Internet Availability].MEMBERS ON ROWS
+FROM [Customer Churn DB];
+
+-- 4. Sử dụng TOPCOUNT Function
+SELECT
+    {[Measures].[Customer Churn Fact Count]} ON COLUMNS,
+    TOPCOUNT(
+        [Dim Tenure].[Tenure Group].MEMBERS *
+        [Dim Contract].[Contract Group].MEMBERS,
+        5,
+        [Measures].[Customer Churn Fact Count]
+    ) ON ROWS
+FROM [Customer Churn DB];
+
+-- 5. Sử dụng GENERATE Function và CURRENTMEMBER
+SELECT
+    {[Measures].[Customer Churn Fact Count]} ON COLUMNS,
+    GENERATE(
+        [Dim Internet Service].[Internet Service].MEMBERS,
+        {
+            ([Dim Internet Service].[Internet Service].CURRENTMEMBER,
+             TOPCOUNT(
+                 [Dim Contract].[Contract].MEMBERS,
+                 1,
+                 [Measures].[Customer Churn Fact Count]
+             ))
+        }
+    ) ON ROWS
+FROM [Customer Churn DB];
+
+---- 10 SCENARIOS -------
+-- 1. MDX for Row (TenureGroup), Column (Churn), Values (Count of CustomerID)
+SELECT
+    NON EMPTY [Dim Churn].[Churn].MEMBERS ON COLUMNS,
+    NON EMPTY [Dim Tenure].[Tenure Group].MEMBERS ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Customer Churn Fact Count]);
+
+
+--2. MDX for Row (InternetService), Column (ContractGroup), Values (Average of MonthlyCharges)
+WITH 
+MEMBER [Measures].[Avg Monthly Charges] AS
+    IIF(
+        COUNT(
+            NONEMPTY(
+                [Dim Customer].[Customer ID].[Customer ID].MEMBERS,
+                ([Measures].[Monthly Charges],
+                 [Dim Internet Service].[Internet Service].CurrentMember,
+                 [Dim Contract].[Contract].CurrentMember)
+            )
+        ) = 0,
+        NULL,
+        SUM(
+            NONEMPTY(
+                [Dim Customer].[Customer ID].[Customer ID].MEMBERS,
+                ([Measures].[Monthly Charges],
+                 [Dim Internet Service].[Internet Service].CurrentMember,
+                 [Dim Contract].[Contract].CurrentMember)
+            ),
+            [Measures].[Monthly Charges]
+        ) /
+        COUNT(
+            NONEMPTY(
+                [Dim Customer].[Customer ID].[Customer ID].MEMBERS,
+                ([Measures].[Monthly Charges],
+                 [Dim Internet Service].[Internet Service].CurrentMember,
+                 [Dim Contract].[Contract].CurrentMember)
+            )
+        )
+    )
+
+SELECT
+    NON EMPTY 
+        {[Dim Internet Service].[Internet Service].[Internet Service].MEMBERS, [Dim Internet Service].[Internet Service].[All]} ON COLUMNS,
+    NON EMPTY 
+        {[Dim Contract].[Contract].[Contract].MEMBERS, [Dim Contract].[Contract].[All]} ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Avg Monthly Charges]);
+
+-- 3. MDX for Row (PaymentCategory), Column (PaperlessBilling), Values (Sum of TotalCharges)
+SELECT
+    NON EMPTY [Dim Customer].[Paperless Billing].MEMBERS ON COLUMNS,
+    NON EMPTY [Dim Payment Method].[Payment Category].MEMBERS ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Total Charges]);
+
+-- 4. MDX for Row (Contract), Column (InternetAvailability), Values (Count of CustomerID)
+SELECT
+    NON EMPTY [Dim Internet Service].[Internet Availability].MEMBERS ON COLUMNS,
+    NON EMPTY TOPCOUNT(
+        [Dim Contract].[Contract].MEMBERS,
+        5,
+        [Measures].[Customer Churn Fact Count]
+    ) ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Customer Churn Fact Count]);
+
+-- 5. MDX for Row (TenureRange), Column (SeniorCitizen), Values (Average of TotalCharges)
+WITH 
+MEMBER [Measures].[Avg Total Charges] AS
+    IIF(
+        COUNT(
+            NONEMPTY(
+                [Dim Customer].[Customer ID].[Customer ID].MEMBERS,
+                ([Measures].[Total Charges],
+                 [Dim Customer].[Senior Citizen].CurrentMember,
+                 [Dim Tenure].[Tenure Range].CurrentMember)
+            )
+        ) = 0,
+        NULL,
+        SUM(
+            NONEMPTY(
+                [Dim Customer].[Customer ID].[Customer ID].MEMBERS,
+                ([Measures].[Total Charges],
+                 [Dim Customer].[Senior Citizen].CurrentMember,
+                 [Dim Tenure].[Tenure Range].CurrentMember)
+            ),
+            [Measures].[Total Charges]
+        ) /
+        COUNT(
+            NONEMPTY(
+                [Dim Customer].[Customer ID].[Customer ID].MEMBERS,
+                ([Measures].[Total Charges],
+                 [Dim Customer].[Senior Citizen].CurrentMember,
+                 [Dim Tenure].[Tenure Range].CurrentMember)
+            )
+        )
+    )
+
+SELECT
+    NON EMPTY 
+        {[Dim Customer].[Senior Citizen].[Senior Citizen].MEMBERS, [Dim Customer].[Senior Citizen].[All]} ON COLUMNS,
+    NON EMPTY 
+        {[Dim Tenure].[Tenure Range].[Tenure Range].MEMBERS, [Dim Tenure].[Tenure Range].[All]} ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Avg Total Charges]);
+
+--6. MDX for Row (InternetService), Column (Dependents), 
+-- Values (Average of MonthlyCharges)
+WITH 
+MEMBER [Measures].[Avg Monthly Charges] AS
+    IIF(
+        COUNT(
+            NONEMPTY(
+                [Dim Customer].[Customer ID].[Customer ID].MEMBERS,
+                ([Measures].[Monthly Charges],
+                 [Dim Customer].[Dependents].CurrentMember,
+                 [Dim Internet Service].[Internet Service].CurrentMember)
+            )
+        ) = 0,
+        NULL,
+        SUM(
+            NONEMPTY(
+                [Dim Customer].[Customer ID].[Customer ID].MEMBERS,
+                ([Measures].[Monthly Charges],
+                 [Dim Customer].[Dependents].CurrentMember,
+                 [Dim Internet Service].[Internet Service].CurrentMember)
+            ),
+            [Measures].[Monthly Charges]
+        ) /
+        COUNT(
+            NONEMPTY(
+                [Dim Customer].[Customer ID].[Customer ID].MEMBERS,
+                ([Measures].[Monthly Charges],
+                 [Dim Customer].[Dependents].CurrentMember,
+                 [Dim Internet Service].[Internet Service].CurrentMember)
+            )
+        )
+    )
+
+SELECT
+    NON EMPTY 
+        {[Dim Customer].[Dependents].[Dependents].MEMBERS, [Dim Customer].[Dependents].[All]} ON COLUMNS,
+    NON EMPTY 
+        {[Dim Internet Service].[Internet Service].[Internet Service].MEMBERS, [Dim Internet Service].[Internet Service].[All]} ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Avg Monthly Charges]);
+
+
+-- 7. MDX for Row (PaymentMethod), Column (Churn), Values (Count of CustomerID)
+SELECT
+    NON EMPTY [Dim Churn].[Churn].MEMBERS ON COLUMNS,
+    NON EMPTY [Dim Payment Method].[Payment Method].MEMBERS ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Customer Churn Fact Count]);
+
+-- 8. MDX for Row (ContractGroup), Column (Gender), Values (Sum of TotalCharges)
+SELECT
+    NON EMPTY [Dim Customer].[Gender].MEMBERS ON COLUMNS,
+    NON EMPTY [Dim Contract].[Contract Group].MEMBERS ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Total Charges]);
+
+--9. MDX for Row (Tenure), Column (Partner), Values (Average of MonthlyCharges)
+SELECT
+    NON EMPTY [Dim Customer].[Partner].MEMBERS ON COLUMNS,
+    NON EMPTY [Dim Tenure].[Tenure].MEMBERS ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Monthly Charges]);
+
+-- 10. MDX for Row (InternetService), Column (PaperlessBilling), Values (Count of CustomerID)
+SELECT
+    NON EMPTY [Dim Customer].[Paperless Billing].MEMBERS ON COLUMNS,
+    NON EMPTY [Dim Internet Service].[Internet Service].MEMBERS ON ROWS
+FROM [Customer Churn DB]
+WHERE ([Measures].[Customer Churn Fact Count]);
+
