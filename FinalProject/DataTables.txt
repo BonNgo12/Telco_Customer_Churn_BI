@@ -1,0 +1,80 @@
+Dim_Customer (customerID, gender, SeniorCitizen, Partner, Dependents, PaperlessBilling)
+CREATE TABLE [Dim_Customer] (
+    [customerID] nvarchar(255) PRIMARY KEY,
+    [gender] nvarchar(255),
+    [SeniorCitizen] float,
+    [Partner] nvarchar(255),
+    [Dependents] nvarchar(255),
+    [PaperlessBilling] nvarchar(255)
+)
+Dim_InternetService (InternetServiceID, internet_service, internet_availability)
+-	Internet Availability (Has Internet, No Internet)
+CREATE TABLE [Dim_InternetService] (
+    [InternetServiceID] INT IDENTITY(1,1) PRIMARY KEY,
+    [InternetService] nvarchar(255),
+    [InternetAvailability] nvarchar(255)
+)
+Dim_PaymentMethod (PaymentMethodID, payment_method, payment_category)
+-	Payment Category (Automatic, Manual) 
+-	Payment Method (Electronic check (manual), Mailed check (manual), Bank transfer (automatic), Credit card (automatic))
+CREATE TABLE Dim_PaymentMethod (
+    [PaymentMethodID] INT IDENTITY(1,1) PRIMARY KEY,
+    [PaymentCategory] NVARCHAR(255),
+    [PaymentMethod] NVARCHAR(255)
+)
+Dim_AdditionalServices (AdditionalServicesID, PhoneService, MultipleLines, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies) 
+CREATE TABLE [Dim_AdditionalServices] (
+    [AdditionalServicesID] INT IDENTITY(1,1) PRIMARY KEY,
+    [PhoneService] nvarchar(255),
+    [MultipleLines] nvarchar(255),
+    [OnlineSecurity] nvarchar(255),
+    [OnlineBackup] nvarchar(255),
+    [DeviceProtection] nvarchar(255),
+    [TechSupport] nvarchar(255),
+    [StreamingTV] nvarchar(255),
+    [StreamingMovies] nvarchar(255)
+)
+Dim_Contract (contractID, contract, contract_group)
+-	Contract Group: (Short-term, Long-term)
+CREATE TABLE [Dim_Contract] (
+    [contractID] INT IDENTITY(1,1) PRIMARY KEY,
+    [ContractGroup] nvarchar(255),
+    [Contract] nvarchar(255)
+)
+Dim_Tenure (tenureID, tenure, tenure_range, tenure_group)
+-	Tenure Range: (0-12 months, 13-24 months, v.v.). 
+o	0-12 months: tenure from 0 to 12 
+o	13-24 months: tenure from 13 to 24 
+o	25-36 months: tenure from 25 to 36 
+o	37-48 months: tenure from 37 to 48 
+o	49-60 months: tenure from 49 to 60 
+o	61-72 months: tenure from 61 to 72
+-	Tenure Group: (Short-term, Medium-term, Long-term)
+o	Short-term: 0-24 months (tenure from 0 to 24) 
+o	Medium-term: 25-48 months (tenure from 25 to 48) 
+o	Long-term: 49-72 months (tenure from 49 to 72)
+CREATE TABLE [Dim_Tenure] (
+    [tenureID] INT IDENTITY(1,1) PRIMARY KEY,
+    [tenureRange] nvarchar(255),
+    [tenureGroup] nvarchar(255),
+    [tenure] int
+)
+CustomerChurnFact (FactID, customerID, InternetServiceID, PaymentMethodID, AdditionalServicesID, contractID, tenureID, MonthlyCharges, TotalCharges, ChurnID)
+CREATE TABLE [CustomerChurnFact] (
+    [FactID] INT IDENTITY(1,1) PRIMARY KEY,
+    [customerID] nvarchar(255),
+    [AdditionalServicesID] int,
+    [contractID] int,
+    [InternetServiceID] int,
+    [PaymentMethodID] int,
+    [tenureID] int,
+    [MonthlyCharges] float,
+    [TotalCharges] float,
+    [Churn] nvarchar(255)
+)
+
+Dim_Churn(ChurnID, Churn)
+CREATE TABLE [Dim_Churn] (
+    [ChurnID] INT IDENTITY(1,1) PRIMARY KEY,
+    [Churn] nvarchar(255)
+)

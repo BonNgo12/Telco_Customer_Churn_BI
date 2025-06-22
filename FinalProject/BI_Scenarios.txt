@@ -1,0 +1,45 @@
+1. TenureGroup Customer Counts
+Row (TenureGroup), Column (Churn), Values (Count of CustomerID)
+The retention team analyzes customer counts by tenure group to identify new subscribers for a loyalty campaign launching this week.
+
+2. InternetService and ContractGroup Monthly Charges 
+Row (InternetService), Column (ContractGroup), Values (Average of MonthlyCharges)
+The pricing team reviews average monthly charges by internet service and contract group to propose promotions for high-cost services, starting next quarter.
+
+3. PaymentCategory and PaperlessBilling Total Charges
+Row (PaymentCategory), Column (PaperlessBilling), Values (Sum of TotalCharges)
+The finance team forecasts revenue by payment category and paperless billing status, planning a campaign to boost paperless adoption for higher revenue.
+
+4. Contract and InternetAvailability Customer Counts
+Row (Contract), Column (InternetAvailability), Values (Count of CustomerID)
+Customer service targets high-volume contract types with internet access to offer upgrades, addressing recent complaints with a campaign starting today.
+
+5. TenureRange and SeniorCitizen Total Charges
+Row (TenureRange), Column (SeniorCitizen), Values (Average of TotalCharges)
+Product development designs a senior-focused package for new customers, based on lower total charges, to launch next month.
+
+6. InternetService and Dependents Monthly Charges
+Row (InternetService), Column (Dependents), Values (Average of MonthlyCharges)
+Marketing targets single customers with high-cost internet services, planning a discounted plan promotion to retain them, starting this week.
+
+7. PaymentMethod Customer Counts
+Row (PaymentMethod), Column (Churn), Values (Count of CustomerID)
+Operations investigates payment method popularity to improve reliability, offering incentives for automatic payments starting tomorrow.
+
+8. ContractGroup and Gender Total Charges
+Row (ContractGroup), Column (Gender), Values (Sum of TotalCharges)
+Sales plans a gender-specific promotion for long-term contracts, targeting high-revenue customers with exclusive perks for June 2025.
+
+9. Tenure and Partner Monthly Charges
+Row (Tenure), Column (Partner), Values (Average of MonthlyCharges)
+Analytics designs a family-oriented loyalty program for partnered customers at higher tenures, set to launch in July 2025.
+
+10. InternetService and PaperlessBilling Customer Counts
+Row (InternetService), Column (PaperlessBilling), Values (Count of CustomerID)
+Customer experience promotes paperless billing for specific internet services, launching a sustainability campaign today to enhance retention.
+
+
+
+
+
+
